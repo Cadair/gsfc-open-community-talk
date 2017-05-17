@@ -17,8 +17,17 @@ div.slides {
     float: right;
 }
 
-.centre {
+p.center {
     text-align: center;
+}
+
+div.center {
+    margin: 0 auto;
+    width: initial;
+}
+
+div.clear {
+    clear: both;
 }
 
 h1 {
