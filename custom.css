@@ -17,7 +17,7 @@ div.slides {
     float: right;
 }
 
-p.center {
+center {
     text-align: center;
 }
 
@@ -64,6 +64,14 @@ div.output_png {
     text-align: center;
 }
 
+div.img-fit {
+    text-align: center;
+}
+
+div.img-fit > img {
+    display: inline-block;
+}
+
 li {
     padding-top: 1em !important;
 }
@@ -99,4 +107,8 @@ div.output_area .rendered_html img, div.output_area .rendered_html table {
 
 .align-center {
     text-align: center;
+}
+
+div.slides {
+    min-width: 900px;
 }

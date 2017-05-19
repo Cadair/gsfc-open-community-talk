@@ -19,6 +19,7 @@
 <!-- General and theme style sheets -->
 <link rel="stylesheet" href="{{resources.reveal.url_prefix}}/css/reveal.css">
 <link rel="stylesheet" href="{{resources.reveal.url_prefix}}/css/theme/white.css" id="theme">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -120,11 +121,31 @@ a.anchor-link {
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
 <link rel="stylesheet" href="custom.css">
 
+
+<!-- ##################################################################### -->
+<!-- UNCOMMENT THIS SECTION TO HIDE INPUT CODE                             -->
+<!-- ##################################################################### -->
+
+<style type="text/css">
+div.input {
+  display: none;
+}
+</style>
+
+<script>
+  $(document).ready(function(){
+    $(".output_wrapper").click(function(){
+        $(this).prev('.input').slideToggle();
+    });
+  })
+</script>
+
+<!-- ##################################################################### -->
+
 </head>
 {% endblock header%}
 
 {% block post_slides %}
-
 <script>
   require(
     {
@@ -147,7 +168,7 @@ a.anchor-link {
 
             
             //size
-            width: '80%',
+            width: '70%',
 
             parallaxBackgroundImage: 'images/background_1.jpg',
             parallaxBackgroundSize: '3800px 1200px',
