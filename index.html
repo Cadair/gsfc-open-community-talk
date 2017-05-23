@@ -11880,18 +11880,10 @@ div.input {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Building-an-Open-Community-around-Software-in-Solar-Physics">Building an Open Community around Software in Solar Physics<a class="anchor-link" href="#Building-an-Open-Community-around-Software-in-Solar-Physics">&#182;</a></h1><h2 id="Stuart-Mumford">Stuart Mumford<a class="anchor-link" href="#Stuart-Mumford">&#182;</a></h2><h3 style="text-align: center;"> The University of Sheffield </h3><p><img style='float: left; width: 30%; margin-top: 90px; height: 25%;' src='images/TUOS_Logo_CMYK_Keyline.svg'/> 
-<img style='float: right; width: 30%; margin-top: 90px; height: 25%;' src='images/sunpy_logo.svg'/></p>
+<h1 id="Building-an-Open-Community-around-Software-in-Solar-Physics">Building an Open Community around Software in Solar Physics<a class="anchor-link" href="#Building-an-Open-Community-around-Software-in-Solar-Physics">&#182;</a></h1><h2 id="Stuart-Mumford">Stuart Mumford<a class="anchor-link" href="#Stuart-Mumford">&#182;</a></h2><h3></h3><p><img style='float: left; width: 30%; margin-top: 90px; height: 25%;' src='images/TUOS_Logo_CMYK_Keyline.svg'/> 
+<img style='float: right; width: 30%; margin-top: 90px; height: 25%;' src='images/aperio_logo.svg'/> 
+<img style='float: right; width: 30%; margin-top: 90px; height: 25%; margin-right: 2%;' src='images/sunpy_logo.svg'/></p>
 
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Disclaimer:">Disclaimer:<a class="anchor-link" href="#Disclaimer:">&#182;</a></h1><h2 id="This-talk-was-written-yesterday-and-this-morning.-I-am-giving-at-GSFC-next-week-so-you-all-are-my-test-subjects.">This talk was written yesterday and this morning. I am giving at GSFC next week so you all are my test subjects.<a class="anchor-link" href="#This-talk-was-written-yesterday-and-this-morning.-I-am-giving-at-GSFC-next-week-so-you-all-are-my-test-subjects.">&#182;</a></h2>
 </div>
 </div>
 </div></section></section><section><section>
@@ -11949,16 +11941,20 @@ div.input {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Software-in-Science">Software in Science<a class="anchor-link" href="#Software-in-Science">&#182;</a></h1><p><h3 class='fragment' style="text-align: center;" >It's quite hard to avoid it! </h3></p>
-<div class='fragment' style="padding-top: 2em;">
+<div style="padding-top: 2em;">
 
-<h3> Some issues with software and science in general: </h3>
 <ul class='list'>
-    <li class='fragment'> Software best practices are not taught at undergraduate / graduate level. </li>
+    <li class='fragment'> Scientists spend 30% of their time programming but 90% are self-taught. [1]</li>
     <li class='fragment'> It can be challenging to be rewarded for contributing to software. </li>
-    <li class='fragment'> <b> Lot's </b>of people writing the same code. </li>
+    <li class='fragment'> <b> Lots </b>of people writing the same code. </li>
     <li class='fragment'> Software is not often shared with publications. </li>
+    <li class='fragment'> Communtiy software is rarely funded well. [2]</li>
 </ul>
-</div>
+</div><p style="font-size: small;">
+1. Wilson, G. et al. Best Practices for Scientific Computing. PLoS Biology 12, e1001745 (2014).
+<br/>
+2. Muna, D. et al. The Astropy Problem. ArXiv e-prints (2016).
+</p>
 </div>
 </div>
 </div><aside class="notes">
@@ -12010,6 +12006,27 @@ div.input {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Python-in-Astronomy">Python in Astronomy<a class="anchor-link" href="#Python-in-Astronomy">&#182;</a></h1><div class='left'>
+<ul>
+<li> Python has seen an increase in adoption in Astronomy for a long time. </li>
+<li> Very rapid adoption since ~2011. </li>
+<li> Recent surveys and studies suggest it is now the most popular tool in astronomy. [1]</li>
+</ul>
+
+</div><div class='right'>
+<div style="position:relative; width:99%; height:480px;">
+<img class="fade-out fragment" data-fragment-index="0" src="images/hockey_stick_graph.svg"  style="position:absolute;top:0;left:0;" />
+<img class="fade-in fragment" data-fragment-index="0" src="images/tools_by_career.png"  style="position:absolute;top:0;left:0;" />
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <div class='img-fit'>
 <img src='images/sunpy_logo.svg'/>
 </div>
@@ -12044,6 +12061,19 @@ div.input {
 </div>
 </div>
 </aside></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="What-is-SunPy?">What is SunPy?<a class="anchor-link" href="#What-is-SunPy?">&#182;</a></h1><ul>
+<li>What has sunpy got from being a community project.</li>
+<li>What hasn't been done before? (coords?)</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12120,7 +12150,8 @@ inclusive, successful, and growing community.
 
 A members of SunPy is,
 
-<h3> Open </h3>
+<h3 style="opacity: 0.7;"> Open </h3>
+<p style="opacity: 0.7;">
 Members of the community are open to collaboration, whether it is on 
 patches, reporting issues, asking for help or otherwise.
 We welcome those interested in joining the community, and realise that including
@@ -12130,9 +12161,10 @@ We're accepting of all who wish to take part in our activities, fostering an
 environment where anyone can participate and everyone can make a difference,
 ensuring that all participants are heard and feel confident that they can freely
 express their opinions.
+<p>
 
-<h3> Considerate</h3>
-<p style="opacity: 0.8;">
+<h3 style="opacity: 0.6;"> Considerate</h3>
+<p style="opacity: 0.6;">
 Members of the community are considerate of their peers -- other developer,
 users, etc. 
 We're thoughtful when addressing the efforts of others, keeping in
@@ -12144,8 +12176,8 @@ acknowledgement/citation of original authors at all times.
 As authors, we pledge to be explicit about how we want our own work to be cited
 or acknowledged.
 </p>
-<h3 style="opacity: 0.7;"> Respectful</h3>
-<p style="opacity: 0.7;">
+<h3 style="opacity: 0.5;"> Respectful</h3>
+<p style="opacity: 0.5;">
 Members of the community are respectful. 
 We're respectful of others, their positions, their skills, their commitments,
 and their efforts.
@@ -12161,12 +12193,12 @@ appropriate.
 We will treat those outside our community with the same respect as people
 within our community.
 </p>
-<p style="opacity: 0.6;">
+<p style="opacity: 0.4;">
 Overall, we are good to each other and apply this CoC to all community
 situations online and offline, including mailing lists, forums, social media,
 conferences, meetings, associated social events, and one-to-one interactions.
 </p>
-<p style="opacity: 0.5;">
+<p style="opacity: 0.3;">
 We pledge to help the entire community follow the code of conduct, and to not
 remain silent when we see violations of the code of conduct.
 We will take action when members of our community violate this code such as
@@ -12312,7 +12344,7 @@ treated with the strictest confidence) or talking privately with the person.
 </div>
 </div>
 </div>
-</aside>
+</aside></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12512,6 +12544,15 @@ RK5CYII=
 </div>
 </div>
 
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Getting-Started?">Getting Started?<a class="anchor-link" href="#Getting-Started?">&#182;</a></h1>
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
