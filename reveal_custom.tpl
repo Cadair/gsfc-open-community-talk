@@ -166,7 +166,6 @@ div.input {
             theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
             transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
 
-            
             //size
             width: '70%',
 
@@ -174,13 +173,23 @@ div.input {
             parallaxBackgroundSize: '3800px 1200px',
 
 
+            // multiplex: {
+            //     secret: null,
+            //     //secret: '14955961655968463207',
+            //     id: '49f250058f7ce1f9',
+            //     url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh'
+            // },
+
             // Optional libraries used to extend on reveal.js
             dependencies: [
                 { src: "{{resources.reveal.url_prefix}}/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
                 { src: "{{resources.reveal.url_prefix}}/plugin/notes/notes.js",
                   async: true,
-                  condition: function() { return !!document.body.classList; } }
+                  condition: function() { return !!document.body.classList; } },
+                // { src: "{{resources.reveal.url_prefix}}/plugin/multiplex/client.js", async: true }
+		            // { src: '//cdn.socket.io/socket.io-1.3.5.js', async: false },
+                // { src: "{{resources.reveal.url_prefix}}/plugin/multiplex/master.js", async: true }
             ]
         });
         var update = function(event){
